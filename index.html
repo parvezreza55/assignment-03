@@ -203,8 +203,10 @@
               <div class="flex gap-10 items-center shadow-lg p-5 rounded-lg">
                 <div><img src="assets/commercial.png" alt="" /></div>
                 <div>
-                  <h1>Commercial</h1>
-                  <p>
+                  <h1 class="text-[20px] font-extrabold text-[#494949]">
+                    Commercial
+                  </h1>
+                  <p class="font-medium text-[#737373]">
                     The barn house captivates with its blend of rustic charm and
                     modern.
                   </p>
@@ -213,8 +215,10 @@
               <div class="flex gap-10 items-center shadow-lg p-5 rounded-lg">
                 <div><img src="assets/residential.png" alt="" /></div>
                 <div>
-                  <h1>Residential</h1>
-                  <p>
+                  <h1 class="text-[20px] font-extrabold text-[#494949]">
+                    Residential
+                  </h1>
+                  <p class="font-medium text-[#737373]">
                     The barn house captivates with its blend of rustic charm and
                     modern.
                   </p>
@@ -317,20 +321,28 @@
         </p>
 
         <!-- card section  -->
-        <div class="container mx-auto">
-          <!-- card 1   -->
-          <div class="flex gap-10 shadow-lg p-4 rounded-2xl">
-            <div><img src="assets/img1.png" alt="" /></div>
-            <div class="space-y-3">
+        <div
+          class="lg:max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-10 w-10/12 gap-3"
+        >
+          <!-- card 1  -->
+          <div
+            class="card flex-col md:p-4 md:flex-row bg-base-100 shadow-xl md:col-span-10 lg:col-span-7"
+          >
+            <figure>
+              <img
+                class="w-full p-4 lg:p-1 m-auto"
+                src="assets/img1.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body py-3 md:w-[70%]">
               <h1 class="text-2xl font-extrabold text-[#494949]">Commercial</h1>
               <p class="text-[18px] font-medium text-[#737373]">
                 The barn house captivates with its blend of rustic charm and
                 modern. The barn house captivates with its blend of rustic charm
                 and modern .
               </p>
-              <!-- button  -->
-
-              <button class="bg-white rounded-full flex gap-2 mt-8">
+              <button class="bg-white rounded-full flex gap-2">
                 <h1 class="text-xl font-bold">View Details</h1>
                 <i
                   class="fa-solid fa-arrow-right w-7 h-7 rounded-full bg-circle-btn -rotate-45 inline-flex justify-center items-center"
@@ -338,9 +350,83 @@
               </button>
             </div>
           </div>
-          <!-- card 2 -->
-          <div class="shadow-lg p-4 rounded-2xl">
-            <img src="assets/img2.png" alt="" />
+
+          <!-- card2    -->
+          <div
+            class="card justify-center items-center bg-base-100 shadow-xl md:col-span-5 lg:col-span-3"
+          >
+            <img class="w-full p-5 m-auto" src="assets/img2.png" alt="Shoes" />
+          </div>
+
+          <!-- hidden card  -->
+          <div
+            class="card justify-center bg-base-100 shadow-xl md:col-span-5 lg:hidden"
+          >
+            <figure>
+              <img
+                class="w-full p-5 h-56 mx-auto lg:my-2"
+                src="assets/img5.png"
+                alt="Shoes"
+              />
+            </figure>
+          </div>
+
+          <!-- card 3  -->
+          <div
+            class="card justify-center items-center bg-base-100 shadow-xl md:col-span-5 hidden lg:inline-block lg:col-span-2"
+          >
+            <img
+              class="w-full p-5 h-56 mx-auto lg:my-2"
+              src="assets/img3.png"
+              alt="Shoes"
+            />
+          </div>
+
+          <!-- card 4  -->
+          <div
+            class="card flex-col md:p-4 md:flex-row bg-base-100 shadow-xl md:col-span-10 lg:col-span-6"
+          >
+            <figure>
+              <img
+                class="w-full p-4 lg:p-1 m-auto"
+                src="assets/img4.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body py-3 md:w-[70%]">
+              <h1 class="text-2xl font-extrabold text-[#494949]">Commercial</h1>
+              <p class="text-[18px] font-medium text-[#737373]">
+                The barn house captivates with its blend of rustic charm and
+                modern. The barn house captivates with its blend of rustic charm
+                and modern .
+              </p>
+              <button class="bg-white rounded-full flex gap-2">
+                <h1 class="text-xl font-bold">View Details</h1>
+                <i
+                  class="fa-solid fa-arrow-right w-7 h-7 rounded-full bg-circle-btn -rotate-45 inline-flex justify-center items-center"
+                ></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- hidden card 2  -->
+          <div
+            class="card bg-base-100 shadow-xl block lg:hidden md:col-span-5 lg:col-span-2"
+          >
+            <img
+              class="w-full h-56 lg:my-3 p-5"
+              src="assets/img3.png"
+              alt="Shoes"
+            />
+          </div>
+
+          <!-- card 5  -->
+          <div class="card bg-base-100 shadow-xl md:col-span-5 lg:col-span-2">
+            <img
+              class="w-[100%] h-56 p-5 lg:mt-2"
+              src="assets/img5.png"
+              alt="Shoes"
+            />
           </div>
         </div>
       </section>
@@ -348,7 +434,11 @@
       <!-- Let’s Discuss Next Project -->
       <section
         class="bg my-28 py-24"
-        style="background-image: url(./assets/bg.jpg)"
+        style="
+          background-image: url(./assets/bg.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
       >
         <div class="space-y-5 w-[75%] mx-auto">
           <div class="flex justify-center items-center">
@@ -415,6 +505,9 @@
           </div>
         </div>
       </section>
+
+      <!-- Our team leader and Engineers  -->
+      <section></section>
     </main>
 
     <!-- footer section    -->
@@ -459,3 +552,31 @@
     </footer>
   </body>
 </html>
+<!-- <div
+class="flex flex-col md:flex-row gap-5 shadow-lg p-4 rounded-2xl lg:col-span-7"
+>
+<div>
+  <img
+    class="max-w-fit"
+    class="w-full"
+    src="assets/img1.png"
+    alt=""
+  />
+</div>
+<div class="space-y-3">
+  <h1 class="text-2xl font-extrabold text-[#494949]">Commercial</h1>
+  <p class="text-[18px] font-medium text-[#737373]">
+    The barn house captivates with its blend of rustic charm and
+    modern. The barn house captivates with its blend of rustic charm
+    and modern .
+  </p>
+  <!-- button  -->
+
+<!-- <button class="bg-white rounded-full flex gap-2 mt-8">
+    <h1 class="text-xl font-bold">View Details</h1>
+    <i
+      class="fa-solid fa-arrow-right w-7 h-7 rounded-full bg-circle-btn -rotate-45 inline-flex justify-center items-center"
+    ></i>
+  </button>
+</div>
+</div>  -->
