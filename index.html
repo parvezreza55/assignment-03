@@ -56,7 +56,7 @@
               <i
                 class="fa-solid fa-arrow-right w-7 h-7 rounded-full bg-circle-btn -rotate-45 inline-flex justify-center items-center"
               ></i>
-              <a class="text-3xl font-extrabold">Rinterio</a>
+              <a class="text-xl md:text-3xl font-extrabold">Rinterio</a>
             </div>
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -81,16 +81,18 @@
                 class="fa-solid fa-cart-shopping bg-white w-8 h-8 rounded-full inline-flex justify-center items-center"
               ></i>
             </div>
-            <button
-              class="btn flex gap-2 justify-center items-center bg-circle-btn rounded-3xl py-2 px-3"
-            >
-              <h1>Book Consult</h1>
-              <a href="#"
-                ><i
-                  class="fa-solid fa-arrow-right w-7 h-7 rounded-full bg-[#1C1C1C] text-white -rotate-45 inline-flex justify-center items-center"
-                ></i
-              ></a>
-            </button>
+            <div class="hidden md:block">
+              <button
+                class="btn flex gap-2 justify-center items-center bg-circle-btn rounded-3xl py-2 px-3"
+              >
+                <h1>Book Consult</h1>
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-arrow-right w-7 h-7 rounded-full bg-[#1C1C1C] text-white -rotate-45 inline-flex justify-center items-center"
+                  ></i
+                ></a>
+              </button>
+            </div>
             <div class="dropdown ml-4">
               <div
                 tabindex="0"
@@ -151,7 +153,9 @@
           </p>
 
           <div class="flex justify-center items-center mt-8">
-            <button class="btn bg-circle-btn-opacity rounded-full px-5">
+            <button
+              class="btn bg-circle-btn-opacity rounded-full px-5 w-full md:w-fit"
+            >
               <h1 class="text-xl font-bold">View Details</h1>
               <i
                 class="fa-solid fa-arrow-right w-7 h-7 rounded-full bg-circle-btn -rotate-45 inline-flex justify-center items-center"
@@ -204,7 +208,9 @@
               </div>
 
               <div class="flex gap-10 items-center shadow-lg p-5 rounded-lg">
-                <div><img src="assets/commercial.png" alt="" /></div>
+                <div>
+                  <img class="w-36" src="assets/commercial.png" alt="" />
+                </div>
                 <div>
                   <h1 class="text-[20px] font-extrabold text-[#494949]">
                     Commercial
@@ -216,7 +222,9 @@
                 </div>
               </div>
               <div class="flex gap-10 items-center shadow-lg p-5 rounded-lg">
-                <div><img src="assets/residential.png" alt="" /></div>
+                <div>
+                  <img class="w-36" src="assets/residential.png" alt="" />
+                </div>
                 <div>
                   <h1 class="text-[20px] font-extrabold text-[#494949]">
                     Residential
@@ -653,7 +661,9 @@
     </main>
 
     <!-- footer section    -->
-    <footer class="footer footer-center bg-[#1C1C1C] text-primary-content p-10">
+    <footer
+      class="footer footer-center bg-[#1C1C1C] text-primary-content p-2 md:p-10"
+    >
       <div>
         <div class="navbar-start">
           <div class="flex gap-2 justify-center items-center">
@@ -693,31 +703,3 @@
     </footer>
   </body>
 </html>
-<!-- <div
-class="flex flex-col md:flex-row gap-5 shadow-lg p-4 rounded-2xl lg:col-span-7"
->
-<div>
-  <img
-    class="max-w-fit"
-    class="w-full"
-    src="assets/img1.png"
-    alt=""
-  />
-</div>
-<div class="space-y-3">
-  <h1 class="text-2xl font-extrabold text-[#494949]">Commercial</h1>
-  <p class="text-[18px] font-medium text-[#737373]">
-    The barn house captivates with its blend of rustic charm and
-    modern. The barn house captivates with its blend of rustic charm
-    and modern .
-  </p>
-  <!-- button  -->
-
-<!-- <button class="bg-white rounded-full flex gap-2 mt-8">
-    <h1 class="text-xl font-bold">View Details</h1>
-    <i
-      class="fa-solid fa-arrow-right w-7 h-7 rounded-full bg-circle-btn -rotate-45 inline-flex justify-center items-center"
-    ></i>
-  </button>
-</div>
-</div>  -->
